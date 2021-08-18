@@ -1991,7 +1991,7 @@ $font-small:1.5rem;
 
   }
 
-@media(max-height:480px) and (max-width:1024px){
+@media(max-height:480px) and (max-width:1440px){
   .home__img{
     max-height: 270px;
   }
@@ -2002,5 +2002,13 @@ $font-small:1.5rem;
 
   .home__title{
     margin-bottom: 2rem;
+  }
+
+  .home__container{
+    height: 100vh;
+  }
+
+  .home{
+    height: 100vh;
   }
 }
