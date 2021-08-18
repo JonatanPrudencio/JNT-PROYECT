@@ -36,7 +36,7 @@ li {
   border-color: #CC3980;
   box-shadow: 0 0 0 0.25rem #cc398052; }
 
-.btn-check:active + .btn-primary:focus, .btn-check:checked + .btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .btn:active:focus, .btn:focus, .show > .btn-primary.dropdown-toggle:focus {
+.btn-check:active + .btn-primary:focus, .btn-check:checked + .btn-primary:focus, .btn-primary:active:focus, .btn-primary:active:focus, .btn:active:focus, .btn:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem #cc398052;
   color: #fff;
   background-color: #CC3980;
@@ -292,6 +292,18 @@ li {
   margin-left: 30px; }
 
 /*FIN Estilos Footer*/
+.select--color {
+  outline: 0; }
+
+.select--color:focus {
+  border-color: #CC3980; }
+
+.lb-cant {
+  display: none; }
+
+.cant-comprar {
+  display: flex; }
+
 .a-filter {
   text-decoration: none;
   color: #000000; }
@@ -301,17 +313,6 @@ li {
 
 .btn-close:focus {
   box-shadow: 0 0 0 0.25rem rgba(204, 57, 128, 0.3); }
-
-.button-product__watch--rel {
-  font-weight: 700;
-  color: #000000;
-  cursor: pointer;
-  margin-top: 1rem;
-  padding: .5rem 2.5rem;
-  background-color: unset;
-  transition: all 0.3s ease-in-out;
-  border: 1px solid #000000;
-  position: relative; }
 
 .relacionados-content {
   display: grid;
@@ -344,6 +345,9 @@ li {
   padding-right: 0;
   text-align: center; }
 
+.cont-product-rel__img {
+  overflow: hidden; }
+
 .cont-product__img--rel {
   width: auto;
   height: 100%;
@@ -351,6 +355,9 @@ li {
   object-fit: cover;
   cursor: pointer;
   transition: all 1s; }
+
+.cont-product-rel__img:hover > .cont-product__img--rel {
+  transform: scale(1.2); }
 
 .product-description-rel {
   border-top: 1px solid #ccc;
@@ -376,7 +383,8 @@ li {
   height: 40px;
   padding-left: 10px;
   font-size: 16px;
-  margin-right: 10px; }
+  margin-right: 10px;
+  outline: 0; }
 
 .buy-btn {
   background-color: #CC3980;
@@ -386,6 +394,9 @@ li {
   color: #fff;
   border: 1px solid #ccc;
   font-weight: 500; }
+
+.buy-btn:hover {
+  background: rgba(204, 57, 128, 0.7); }
 
 .btn-cc {
   padding: .375rem .75rem;
@@ -1360,6 +1371,27 @@ li {
 
 /*Responsive movil*/
 @media (max-width: 480px) {
+  .ruta-product {
+    margin-top: 2rem; }
+  .product-des {
+    margin-bottom: 2rem; }
+  .sproduct input {
+    padding-left: 15px;
+    margin-right: 0; }
+  .buy-btn {
+    margin-top: 1.5rem;
+    width: 100%; }
+  .cantidad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0; }
+  .lb-cant {
+    display: block; }
+  .cant-comprar {
+    display: block; }
   .create-form__button {
     width: 90%;
     margin-right: auto;
