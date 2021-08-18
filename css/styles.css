@@ -1603,6 +1603,8 @@ li {
 
 @media (min-width: 769px) and (max-width: 1023px) {
   .container-grid-productos {
+    grid-template-columns: repeat(3, 1fr); }
+  .relacionados-content {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media (max-height: 480px) {

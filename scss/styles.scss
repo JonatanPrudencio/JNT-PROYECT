@@ -1997,6 +1997,10 @@ $font-small:1.5rem;
     .container-grid-productos{
       grid-template-columns: repeat(3, 1fr);
     }
+
+    .relacionados-content{
+      grid-template-columns: repeat(3,1fr);
+    }
   }
 
 @media(max-height:480px){
