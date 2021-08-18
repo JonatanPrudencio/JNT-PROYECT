@@ -1892,7 +1892,7 @@ $font-small:1.5rem;
       text-align: -webkit-center; } }
   
   /*Responsive Laptop*/
-  @media (min-width: 769px) and (max-width: 1024px) {
+  @media (min-width: 769px) and (max-width: 1080px) {
   
     .home__title{
       font-size: 5rem;
@@ -1953,6 +1953,8 @@ $font-small:1.5rem;
         }
       }
   
+
+      
   @media (min-width: 1025px) {
 
     .form-w{
@@ -1971,8 +1973,7 @@ $font-small:1.5rem;
     .offcanvas-start{
       width: 20%;
     }
-    .fluid-fix {
-      width: 80%; }
+    
     .content-info-contact::before {
       display: none; }
     .content-info-contact::after {
@@ -1989,6 +1990,13 @@ $font-small:1.5rem;
       height: 50px;
     }
 
+  }
+
+
+  @media (min-width: 769px) and (max-width: 1023px){
+    .container-grid-productos{
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
 @media(max-height:480px){
