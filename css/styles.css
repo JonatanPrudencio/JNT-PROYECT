@@ -1605,7 +1605,7 @@ li {
 
 @media (max-height: 480px) and (max-width: 1440px) {
   .home__img {
-    max-height: 270px; }
+    max-height: 300px; }
   .home__data {
     padding-top: 1rem; }
   .home__title {
