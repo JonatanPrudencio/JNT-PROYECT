@@ -511,9 +511,9 @@ li {
 
 @keyframes ref {
   from {
-    right: 100%; }
+    opacity: 0; }
   to {
-    right: 0; } }
+    opacity: 1; } }
 
 @keyframes ref2 {
   from {
@@ -543,7 +543,7 @@ li {
   bottom: -5%;
   left: 0;
   display: none;
-  animation: btitle 4s infinite; }
+  animation: btitle 20s infinite; }
 
 @keyframes btitle {
   0% {
@@ -1091,7 +1091,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(204, 57, 128, 0.3);
+  background: rgba(204, 57, 128, 0.1);
   transition: .3s;
   opacity: 0;
   z-index: 1; }
@@ -1178,6 +1178,25 @@ li {
   color: #fff;
   background-color: #000;
   cursor: pointer; }
+
+.create-form__button {
+  margin-top: 40px;
+  padding: 10px 12px;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #000;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #000;
+  cursor: pointer; }
+
+.create-form__button:hover {
+  background-color: #CC3980;
+  border: 1px solid #CC3980; }
 
 .account-form__button:hover {
   background-color: #CC3980;
@@ -1341,6 +1360,10 @@ li {
 
 /*Responsive movil*/
 @media (max-width: 480px) {
+  .create-form__button {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto; }
   .right-nav {
     margin-right: 0; }
   .account-form__title {
