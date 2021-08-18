@@ -1598,14 +1598,14 @@ li {
 
 @media (max-height: 650px) {
   .home__img {
-    height: 350px; }
+    max-height: 350px; }
   .btn-whatsapp img {
     width: 50px;
     height: 50px; } }
 
-@media (max-height: 480px) and (max-width: 1440px) {
+@media (max-height: 480px) {
   .home__img {
-    max-height: 300px; }
+    max-height: 350px; }
   .home__data {
     padding-top: 1rem; }
   .home__title {

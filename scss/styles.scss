@@ -1981,7 +1981,7 @@ $font-small:1.5rem;
   @media(max-height:650px){
 
     .home__img{
-      height: 350px;
+      max-height: 350px;
     }
 
     .btn-whatsapp img{
@@ -1991,9 +1991,9 @@ $font-small:1.5rem;
 
   }
 
-@media(max-height:480px) and (max-width:1440px){
+@media(max-height:480px){
   .home__img{
-    max-height: 300px;
+    max-height: 350px;
   }
 
   .home__data{
