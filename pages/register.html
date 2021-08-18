@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Tienda de Ropa Online">
+	<meta name="Keywords" content="Remeras, Camperas, Buzos, Local, Ropa, Tienda, Registro">
+
+	
+		<!-- Linkeo con animate.css-->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	 <!-- Linkeo con bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- Linkeo con ccs-->
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+
+	<!-- Linkeo de icono página-->
+	<link rel="icon" href="../imagenes/LOGO.ico">
+	<title>JNT | Registrar Cuenta</title>
+
+</head>
+<body>
+<!-- Anuncio-->
+<div class="anuncio">
+	 	
+	<ul class="anuncio__list">
+		<li>Compra minima $5.000</li>
+		<li>¡Seguinos en nuestras redes sociales!</li>
+		<li>Hace tu compra desde casa</li>
+	</ul>
+	
+
+<!-- Fin de Anuncio-->
+
+</div>
+
+<!--Encabezado y menú de navegación-->
+<header class="header"> 
+
+
+<!--Logo página-->
+<div class="header__logo">
+   <a href="../index.html">
+   <img src="../imagenes/JNT LOGO B.png"class="header__logo--size">
+   </a>
+</div> 
+
+ <!--Fin Logo página-->
+
+ <div class="container-menu">
+	<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"> <img src="../imagenes/menu-icono.png"></button>
+	<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+	   <div class="offcanvas-header">
+		 <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Menú</h5>
+		 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	   </div>
+	   <div class="offcanvas-body">
+		   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			   <li class="nav-item">
+		   <a class="nav-link active text-uppercase"  href="../index.html">Inicio</a>
+			 </li>
+			<li class="nav-item dropdown">
+		   <a class="nav-link dropdown-toggle active text-uppercase" href="productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			 Productos
+		   </a>
+		   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			 <li><a class="dropdown-item" href="productos.html">Básicas</a></li>
+			 <li><a class="dropdown-item" href="productos.html">Remeras</a></li>
+			 <li><a class="dropdown-item" href="productos.html">Buzos</a></li>
+			 <li><a class="dropdown-item" href="productos.html">Camperas</a></li>
+			 <li><a class="dropdown-item" href="productos.html">Calzas</a></li>
+			 <li><hr class="dropdown-divider"></li>
+			 <li><a class="dropdown-item" href="productos.html">Ver todos</a></li>
+		   </ul>
+		  </li>
+		  
+		  <li class="nav-item">
+		   <a class="nav-link active text-uppercase"  href="como-comprar.html">¿Cómo Comprar?</a>
+		  </li>
+			<li class="nav-item">
+		   <a class="nav-link active text-uppercase" aria-current="page" href="contact.html">Contacto</a>
+		  </li>
+		  
+		  <li class="nav-item">
+		   <a class="nav-link active text-uppercase" aria-current="page" href="preguntas-frecuentes.html">Preguntas frecuentes</a>
+		  </li>
+		  
+		  </ul>
+
+		  <div class="form-resp">
+			<input class="form-control-responsive me-2 h-inp" type="search" placeholder="Buscar" aria-label="Search">
+			<button class="btn btn-outline-success-responsive" type="submit">Buscar</button>
+		  </div>
+		 
+		  
+		  
+		  
+	   </div>
+	 </div>
+	 <!--Barra de Navegador-->
+   
+   <!--FIN Barra de Navegador-->
+   
+   <form class="d-flex">
+   
+	<div class="right-nav">
+   
+   
+   
+		  <div class="right-nav__cont">
+			  <!--boton bolsa de compras-->
+			  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><img src="../imagenes/icono-bolsa.png" class="right-nav__cont--img"></button>
+			  <div class="offcanvas offcanvas-start-w" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+		<div class="offcanvas-header" style="border-bottom: 1px solid #ccc;">
+		  <h5 class="offcanvas-title font-cfg" id="offcanvasExampleLabel">Bolsa de Compras</h5>
+	  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+	<div class="offcanvas-body">
+   
+   
+	  <div class="ajax-cart-table-header hidden-phone" style="border-bottom: 1px solid #ccc;">
+			  <div class="pull-left">
+				  <p>Producto</p>
+			  </div>
+			  <div class="text-right pull-right cart-subtotal-header">
+				  <p>Subtotal</p>
+			  </div>
+		  </div>
+   
+		</div>
+	  </div>
+			  <!--Fin boton bolsa de compras-->
+   
+			  <div class="header-right">
+				
+					<a href="login.html" class="">
+					
+						<img src="../imagenes/usuario-icono-2.png" class="header-right--ico">
+					
+					
+					</a>
+
+				
+			
+			  
+   
+			  </div> 
+			 
+   
+   
+	  
+		  </div>
+   
+   
+   
+	  
+		  </div>
+   
+   <input class="form-control me-2 h-inp" type="search" placeholder="Buscar" aria-label="Search">
+   <button class="btn btn-outline-success" type="submit">Buscar</button>
+   </form>
+ </div>
+ 
+ 
+ 
+	<!--FIN Barra de Navegador-->
+
+		
+
+
+
+
+	</header>
+
+
+
+
+
+
+
+<main class="main-account">
+
+    <div class="container mt-5">
+
+
+        <form action="" method="post" enctype="" class="row">
+            <h2 class="account-form__title col-md-12">DATOS PERSONALES</h2>
+            <div class="col-md-6">
+                <label  class="label-form" for="email">email</label>
+                <input type="email" name="correo" id="email" class="input-forms-account-r">
+            </div>
+
+            <div class="col-md-6">
+                
+            </div>
+        
+            <div class="col-md-6"> 
+                <label  class="label-form" for="password">contraseña</label>
+                <input type="password" name="correo" id="password" class="input-forms-account-r">
+            </div>
+
+            <div class="col-md-6"> 
+                <label  class="label-form" for="r-password">repetir contraseña</label>
+                <input type="password" name="correo" id="r-password" class="input-forms-account-r">
+            </div>
+
+            <div class="col-md-6">
+                <label  class="label-form" for="nombre">nombre</label>
+                <input type="text" name="correo" id="nombre" class="input-forms-account-r">
+            </div>
+        
+            <div class="col-md-6"> 
+                <label  class="label-form" for="apellidos">apellidos</label>
+                <input type="text" name="correo" id="apellidos" class="input-forms-account-r">
+            </div>
+
+            <div class="col-md-6">
+                <label  class="label-form" for="dni">DNI</label>
+                <input type="text" name="correo" id="dni" class="input-forms-account-r">
+            </div>
+
+            <div class="col-md-6">
+                <label  class="label-form" for="tel">teléfono</label>
+                <input type="text" name="correo" id="tel" class="input-forms-account-r">
+            </div>
+        
+            <div class="col-md-6"> 
+                <label  class="label-form" for="provincia">Provincia</label>
+                <select class="form-input-select" type="select" id="provincia">
+                    <option>--</option>
+                    <option>Buenos Aires</option>
+                    <option>Catamarca</option>
+                    <option>Chaco</option>
+                    <option>Chubut</option>
+                    <option>Ciudad Autonoma de Buenos Aires</option>
+                    <option>Córdoba</option>
+                    <option>Corrientes</option>
+                    <option>Entre Ríos</option>
+                    <option">Formosa</option>
+                    <option>Jujuy</option>
+                    <option>La Pampa</option>
+                    <option>La Rioja</option>
+                    <option>Mendoza</option>
+                    <option>Misiones</option>
+                    <option>Neuquén</option>
+                    <option>Río Negro</option>
+                    <option>Salta</option>
+                    <option>San Juan</option>
+                    <option>San Luis</option>
+                    <option>Santa Cruz</option>
+                    <option>Santa Fe</option>
+                    <option>Santiago del Estero</option>
+                    <option>Tucumán</option>
+                </select>
+            </div>
+
+            <div class="col-md-6">
+                <label  class="label-form" for="ciudad">Ciudad</label>
+                <input type="text" name="correo" id="ciudad" class="input-forms-account-r">
+            </div>
+
+
+            <div class="col-md-6"> 
+                <label  class="label-form" for="direccion">Dirección</label>
+                <input type="text" name="correo" id="direccion" class="input-forms-account-r">
+            </div>
+
+            <div class="col-md-6">
+                <label  class="label-form" for="cod">Código postal</label>
+                <input type="text" name="correo" id="cod" class="input-forms-account-r">
+            </div>
+
+
+            
+                <button class="account-form__button" type="submit">
+                    Crear cuenta
+                  </button> 
+            
+        </form>
+
+    </div>
+	
+    
+
+      
+
+
+</main>
+
+
+
+
+
+
+
+	
+
+
+<a href="https://wa.me/541154940496" target="_blank" class="btn-whatsapp" aria-label="Comunicate por WhatsApp">
+	<img src="../imagenes/icono-wsp.png">
+</a>
+
+
+<!--Pie de página-->
+
+<footer class="footer">
+
+	<div class="footer__container">
+
+		<div class="footer__container-content">
+			<div class="column-nav">
+			<h4 class="footer__title">Navegación</h4>
+		
+		
+			<ul class="footer__menu">
+			<li class="footer__menu-item"><a class="footer__menu-item--link"  href="../index.html">Inicio</a></li>
+			<li class="footer__menu-item"><a class="footer__menu-item--link" href="productos.html">Productos</a></li>
+			<li class="footer__menu-item"><a class="footer__menu-item--link" href="como-comprar.html">¿Cómo comprar?</a></li>
+			<li class="footer__menu-item"><a class="footer__menu-item--link" href="contact.html">Contacto</a></li>
+			<li class="footer__menu-item"><a class="footer__menu-item--link" href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+			</ul>
+		
+		
+			</div>
+
+			<div class="column-contact">
+			<h4 class="footer__title">Contacto</h4>
+			<ul class="footer__menu">
+			<li class="footer__menu-item"><img src="../imagenes/icono-tel2.png" class="footer__menu-item-ico"><a class="footer__menu-item-ico--link" href="tel:1154940496">1154940496</a></li>
+
+			<li class="footer__menu-item"><img src="../imagenes/icono-email2.png" class="footer__menu-item-ico"><a class="footer__menu-item-ico--link" href="mailto:jnt@gmail.com">jnt@gmail.com</a></li>
+
+			<li class="footer__menu-item"><img src="../imagenes/dir-icono.png" class="footer__menu-item-ico"><a class="footer__menu-item-ico--link" href="#" target="_blank">Dirección</a></li>
+
+			</ul>
+			</div>
+
+			<div class="column-social">
+			<h4 class="footer__title">Redes Sociales</h4>
+
+			
+				<div>
+					
+				
+			
+
+			<a href="https://www.instagram.com" target="_blank" class="footer__link"><svg class="footer__link--ico" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="384px" height="384px">    <path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"/></svg></a>
+			<a href="https://www.facebook.com" target="_blank" class="footer__link"><svg class="footer__link--ico" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="384px" height="384px">    <path d="M 5 3 C 3.897 3 3 3.897 3 5 L 3 19 C 3 20.103 3.897 21 5 21 L 11.621094 21 L 14.414062 21 L 19 21 C 20.103 21 21 20.103 21 19 L 21 5 C 21 3.897 20.103 3 19 3 L 5 3 z M 5 5 L 19 5 L 19.001953 19 L 14.414062 19 L 14.414062 15.035156 L 16.779297 15.035156 L 17.130859 12.310547 L 14.429688 12.310547 L 14.429688 10.574219 C 14.429687 9.7862188 14.649297 9.2539062 15.779297 9.2539062 L 17.207031 9.2539062 L 17.207031 6.8222656 C 16.512031 6.7512656 15.814234 6.71675 15.115234 6.71875 C 13.041234 6.71875 11.621094 7.9845938 11.621094 10.308594 L 11.621094 12.314453 L 9.2773438 12.314453 L 9.2773438 15.039062 L 11.621094 15.039062 L 11.621094 19 L 5 19 L 5 5 z"/></svg></a>
+			</div>
+			
+			</div>
+
+		
+
+		</div>
+		
+
+	</div>
+
+	<!--Texto copy-->
+			<div class="footer__copy">
+				<div class="footer__copy-text">
+					<div class="footer__copy-text--h4">
+						<h6>© 2021 JNT. Todos los derechos reservados</h6>
+					</div>
+		
+			
+
+				</div>
+			</div>
+</footer>
+ <!--FIN Pie de página-->
+<!--SCRIPTS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	 <script>new WOW().init();</script>
+</body>
+</html>
