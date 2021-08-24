@@ -657,7 +657,7 @@ $font-small:1.5rem;
     position: relative;
     height: calc(100vh - 9.8rem);
     background: rgba(0, 0, 0, 0.03);
-    animation: ref2 2s forwards;
+    
   }
   
   .home__container{
@@ -669,6 +669,8 @@ $font-small:1.5rem;
   .home__data{
     padding-top: 6rem;
     padding-left: 2rem;
+    position: relative;
+    animation: ref2 2s forwards;
   }
   .home__img{
     position: absolute;
@@ -681,19 +683,27 @@ $font-small:1.5rem;
 
     from{
       opacity: 0;
+      right: 200px;
+      
+      
     }
 
     to{
       opacity: 1;
+      right: 0;
+      
+      
     }
   }
   @keyframes ref2{
 
     from{
+      right: 50%;
       opacity: 0;
     }
 
     to{
+      right: 0;
       opacity: 1;
       
     }
@@ -1347,10 +1357,15 @@ $font-small:1.5rem;
     transition: all 1s; }
   
   .cont-product__img {
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative;
+   }
   
   .cont-product__img:hover > .cont-product__img--prod {
     transform: scale(1.2); }
+
+    .cont-product__img:hover .product-link {
+      opacity: 1; }
   
   .category__content {
     overflow: hidden; }
