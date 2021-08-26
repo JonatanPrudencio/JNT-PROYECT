@@ -212,13 +212,54 @@
 						<option>XL</option>
 					</select>
 
-					<div class="cant-comprar">
-						<div class="cantidad">
-							<label class= "lb-cant" for="cant">Cantidad</label>
-							<input type="number" id="cant" value="1">
+					<div class="product-quantity">
+						<div class="quantity">
+							<label class= "quantity__label" for="quant">Cantidad</label>
+							<input type="number" id="quant" value="1">
 						</div>
 						
-						<button class="buy-btn">AGREGAR A LA BOLSA</button>
+						<button class="buy-btn">AÑADIR A LA BOLSA</button>
+					</div>
+
+
+					<div class="product-shipping">
+						<div class="product-shipping__free">
+
+							<div class="product-shipping__free-icon">
+
+								<img src="../imagenes/icon-camion.png" alt="" class="product-shipping__icon">
+							</div>
+
+							<div class="product-shipping__free-info">
+
+								<div class="product-shipping__free-info-title">
+									Envío Gratuito
+									<img src="../imagenes/question.png" alt="" class="product-shipping__free-info__title-icon">
+								</div> 
+								<div class="product-intro__freeshipping-desc"><span>Envío normal gratuito para pedidos de más de $5.000</span>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="product-shipping__dev">
+
+							<div class="product-shipping__dev-icon">
+								<img src="../imagenes/icon-dev.png" alt=""  class="product-shipping__icon">
+							</div>
+
+							<div><div class="product-shipping__dev-title">
+								Devoluciones
+								<img src="../imagenes/question.png" alt="" class="product-shipping__dev-title__icon">
+							</div> <div class="product-intro__freeshipping-desc">
+								Más información
+							</div></div>
+
+							
+
+						</div>
 					</div>
 					
 					<div class="product-des">
@@ -229,7 +270,7 @@
 
 					</div>
 
-					<div class="info-complementaria">
+					<div class="info-complementary">
 
 						<div class="accordion" id="accordionExample">
 							<div class="accordion-item">
@@ -274,11 +315,11 @@
 		</section>
 
 
-		<section class="productos-relacionados container">
+		<section class="related-products container">
 
-			<h2 class="relacionados-title">PRODUCTOS RELACIONADOS</h2>
+			<h2 class="related-title">PRODUCTOS RELACIONADOS</h2>
 
-			<div class="relacionados-content">
+			<div class="related-products__content">
 				<div class="cont-product-rel">
 					<div class="cont-product-rel__img">
 						<img src="../imagenes/img1.jpg" class="cont-product__img--rel">

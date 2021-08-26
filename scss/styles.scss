@@ -354,6 +354,50 @@ $font-small:1.5rem;
                     }
 /*FIN Estilos Footer*/
 
+.product-shipping{
+  margin-top: 25px;
+background-color: #f7f8fa;
+}
+
+.product-shipping__free{
+
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  
+    cursor: pointer;
+}
+.product-shipping__free-info-title,.product-shipping__dev-title{
+  font-size: 13px;
+  font-weight: 700;
+}
+.product-shipping__free-info__title-icon,.product-shipping__dev-title__icon{
+  height: 12px;
+  width: 12px;
+}
+
+
+.product-shipping__icon{
+  width: 50px;
+    height: 50px;
+}
+
+.product-intro__freeshipping-desc{
+  color: #767676;
+  font-size: 12px;
+}
+
+
+.product-shipping__dev{
+  width: 100%;
+  
+  padding: 0 20px 20px 20px;
+  display: flex;
+  align-items: center;
+    cursor: pointer;
+}
+
 
 .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
@@ -370,7 +414,7 @@ $font-small:1.5rem;
   background-color: $color-primario;
 }
 
-.info-complementaria{
+.info-complementary{
   margin: 2rem 0;
 }
 
@@ -382,10 +426,10 @@ $font-small:1.5rem;
 }
 
 
-.lb-cant{
+.quantity__label{
   display: none;
 }
-.cant-comprar{
+.product-quantity{
   display: flex;
 }
 
@@ -407,7 +451,7 @@ $font-small:1.5rem;
 }
 
 
-.relacionados-content{
+.related-products__content{
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -418,7 +462,7 @@ $font-small:1.5rem;
   
 }
 
-.relacionados-title{
+.related-title{
   text-align: center;
     font-weight: bold;
     margin: 40px;
@@ -427,7 +471,7 @@ $font-small:1.5rem;
 }
 
 
-.relacionados-title::before{
+.related-title::before{
   position: absolute;
     content: '';
     width: 10%;
@@ -1096,11 +1140,12 @@ $font-small:1.5rem;
   .label-form {
     text-transform: uppercase;
     display: block;
+    
     margin-top: 10px;
     font-weight: 500;
     font-size: 12px;
     cursor: pointer; }
-  
+
   .form-contact__group {
     position: relative;
     clear: both;
@@ -1112,13 +1157,19 @@ $font-small:1.5rem;
   
   .form-contact__button {
     color: white;
-    background: #CC3980;
+    background-color: #000;
+    border:1px solid #000;
     width: 250px;
     height: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
     cursor: pointer; }
   
   .form-contact__button:hover {
-    background: hotpink; }
+    background-color:  $color-primario;
+    border: 1px solid $color-primario; 
+  }
   
   .banner5 {
     margin-top: 70px;
@@ -1364,7 +1415,7 @@ $font-small:1.5rem;
   .cont-product__img:hover > .cont-product__img--prod {
     transform: scale(1.2); }
 
-    .cont-product__img:hover .product-link {
+    .cont-product__img:hover .product__link {
       opacity: 1; }
   
   .category__content {
@@ -1380,7 +1431,7 @@ $font-small:1.5rem;
     position: relative;
   }
 
-  .product:hover .product-link{
+  .product:hover .product__link{
     opacity: 1;
     
     
@@ -1390,7 +1441,7 @@ $font-small:1.5rem;
     transform: scale(1.2);
   }
 
-  .product-link{
+  .product__link{
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -1459,9 +1510,13 @@ $font-small:1.5rem;
   .input-forms-account {
     font-size: 14px;
     border: none;
-   
+    width: 100%;
+    background-color: inherit;
     padding-bottom: 4px;
     outline: 0; }
+
+
+    
 
     .link-password{
       display: block;
@@ -1585,11 +1640,11 @@ $font-small:1.5rem;
   /*Responsive tablet*/
   @media (max-width: 768px) {
 
-    .relacionados-content{
+    .related-products__content{
       grid-template-columns: repeat(2,1fr);
     }
 
-    .relacionados-title{
+    .related-title{
       margin: 10px;
     }
 
@@ -1733,7 +1788,7 @@ $font-small:1.5rem;
       width: 100%;
     }
 
-    .cantidad{
+    .quantity{
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -1742,11 +1797,11 @@ $font-small:1.5rem;
       padding: 15px 0;
     }
 
-    .lb-cant{
+    .quantity__label{
       display: block;
     }
 
-    .cant-comprar{
+    .product-quantity{
       display: block;
     }
 
@@ -1770,7 +1825,7 @@ $font-small:1.5rem;
     
 
    
-    .relacionados-content{
+    .related-products__content{
       grid-template-columns: repeat(1,1fr);
     }
 
@@ -2021,7 +2076,7 @@ $font-small:1.5rem;
       grid-template-columns: repeat(3, 1fr);
     }
 
-    .relacionados-content{
+    .related-products__content{
       grid-template-columns: repeat(3,1fr);
     }
   }
